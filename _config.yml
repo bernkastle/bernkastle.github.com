@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexoo
+title: Hexo
 subtitle:
 description:
-author: John Doe
-language:
+author: Karl Wang
+language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://yoursite.com/myBlog/
+root: /myBlog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -72,11 +72,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/bernkastle/myBloy.github.io.git
-  branch: master
+  - type: git
+    repo: https://github.com/bernkastle/myBloy.github.io.git
+    branch: master
+  - type: git
+    repo: https://git.coding.net/bernkastle/myBlog.git
+    branch: master
